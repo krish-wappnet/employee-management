@@ -1,59 +1,91 @@
-# EmployeeManagement
+# Employee Management System  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+A simple **Employee Management System** built with **Angular, NgRx (State Management), Angular Material**, and **@ngrx-addons/persist-state** to store data in **local storage**. Users can **add, update, delete**, and **toggle employee status** between **Active and Inactive**.  
 
-## Development server
+## Features  
+✅ **Dashboard** – View all employees in a table with sorting and filtering.  
+✅ **Add Employee** – Add new employees with form validation.  
+✅ **Edit Employee** – Update employee details.  
+✅ **Delete Employee** – Remove employees from the system.  
+✅ **Toggle Status** – Change employee status between **Active** and **Inactive**.  
+✅ **State Persistence** – Employee data persists in **local storage**.  
+✅ **Responsive Design** – Works on both **desktop** and **mobile** devices.  
 
-To start a local development server, run:
+---
 
-```bash
+## Tech Stack  
+
+- **Frontend:** Angular, TypeScript  
+- **State Management:** NgRx  
+- **UI Library:** Angular Material  
+- **Local Storage Persistence:** @ngrx-addons/persist-state  
+
+---
+
+## Installation & Setup  
+
+### 1. Clone the Repository  
+```sh
+git clone https://github.com/your-username/employee-management.git
+cd employee-management
+2. Install Dependencies
+Make sure you have Node.js and Angular CLI installed. Then, run:
+
+sh
+Copy
+Edit
+npm install
+3. Run the Application
+sh
+Copy
+Edit
 ng serve
-```
+This will start the development server. Open http://localhost:4200 in your browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Project Structure
+pgsql
+Copy
+Edit
+📦 employee-management
+├── 📂 src
+│   ├── 📂 app
+│   │   ├── 📂 employees
+│   │   │   ├── 📜 employees.component.ts
+│   │   │   ├── 📜 employees.reducer.ts
+│   │   │   ├── 📜 employees.actions.ts
+│   │   │   ├── 📜 employees.selectors.ts
+│   │   │   ├── 📜 employees.effects.ts
+│   │   │   ├── 📜 employee.model.ts
+│   │   ├── 📂 services
+│   │   │   ├── 📜 employee.service.ts
+│   │   ├── 📜 app.component.ts
+│   │   ├── 📜 app.routes.ts
+│   │   ├── 📜 app.config.ts
+│   ├── 📂 assets
+│   ├── 📂 styles
+│   ├── 📜 main.ts
+│   ├── 📜 index.html
+│── 📜 angular.json
+│── 📜 package.json
+│── 📜 README.md
+State Management with NgRx
+This project uses NgRx to manage application state efficiently.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Actions: Define actions like addEmployee, updateEmployee, deleteEmployee, and toggleStatus.
+Reducer: Handles state updates based on dispatched actions.
+Selectors: Fetch filtered data from the store.
+Effects (Optional): Side effects like API calls (not needed for local storage).
+How to Use
+1. Add a New Employee
+Click the "Add Employee" button.
+Fill in the form and click "Save".
+2. Edit Employee Details
+Click the edit icon next to an employee.
+Update details and save changes.
+3. Delete an Employee
+Click the delete icon.
+Confirm the action.
+4. Toggle Employee Status
+Click the status button (Active/Inactive).
+Contributing
+Contributions are welcome! Feel free to fork this repo, create a feature branch, and submit a pull request. 🚀
