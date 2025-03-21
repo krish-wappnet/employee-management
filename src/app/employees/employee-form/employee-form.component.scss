@@ -1,0 +1,62 @@
+.form-container {
+  padding: 24px 16px; // Increase padding to prevent overlap
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; // Prevent content from overlapping
+}
+
+mat-dialog-content {
+  overflow: hidden; // Ensure the content stays within bounds
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-top: 12px; // Push fields down from heading
+}
+
+.form-field {
+  width: 100%;
+}
+
+.status-field {
+  grid-column: span 2;
+}
+
+.button-container {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+button[mat-raised-button] {
+  padding: 0 24px;
+}
+
+// Responsive adjustments
+@media (max-width: 600px) {
+  .employee-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-field,
+  .button-container {
+    grid-column: span 1;
+  }
+
+  .form-container {
+    padding: 12px; // Slightly increase padding on mobile
+  }
+
+  .form-field {
+    margin-bottom: 8px;
+  }
+
+  button[mat-raised-button] {
+    width: 100%;
+  }
+}

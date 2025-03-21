@@ -1,0 +1,106 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+.wide-table {
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+mat-header-cell, mat-cell {
+  padding: 12px 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid #e0e0e0;
+  text-align: left;
+  min-height: 52px;
+  height: 52px;
+  box-sizing: border-box;
+}
+
+mat-header-cell, mat-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+mat-header-cell[mat-sort-header=name], mat-cell[matColumnDef=name] {
+  width: 150px;
+}
+
+mat-header-cell[mat-sort-header=email], .email-cell {
+  width: 250px;
+}
+
+mat-header-cell[mat-sort-header=phone], .phone-cell {
+  width: 150px;
+}
+
+mat-header-cell[mat-sort-header=department], mat-cell[matColumnDef=department] {
+  width: 120px;
+}
+
+mat-header-cell[mat-sort-header=status], .status-cell {
+  width: 120px;
+  text-align: center;
+}
+
+mat-header-cell[mat-sort-header=actions], .actions-cell {
+  width: 100px;
+  text-align: center;
+}
+
+button[mat-button], button[mat-icon-button] {
+  margin: 0 auto;
+  min-width: 80px;
+}
+
+button[mat-icon-button] {
+  min-width: 40px;
+}
+
+mat-header-cell:not(:last-child)::after, mat-cell:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #e0e0e0;
+}
+
+mat-paginator {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 0;
+}
+
+@media (max-width: 600px) {
+  .wide-table {
+    min-width: 800px;
+  }
+  mat-header-cell, mat-cell {
+    padding: 8px 12px;
+    font-size: 14px;
+    min-height: 44px;
+    height: 44px;
+  }
+  mat-header-cell[mat-sort-header=email], .email-cell {
+    width: 200px;
+  }
+  mat-header-cell[mat-sort-header=phone], .phone-cell {
+    width: 120px;
+  }
+  button[mat-button], button[mat-icon-button] {
+    min-width: 60px;
+  }
+  button[mat-icon-button] {
+    min-width: 36px;
+  }
+}/*# sourceMappingURL=dashboard.component.css.map */
