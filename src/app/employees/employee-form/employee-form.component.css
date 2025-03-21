@@ -37,7 +37,18 @@ button[mat-raised-button] {
   padding: 0 24px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .form-container {
+    padding: 20px;
+  }
+  .employee-form-grid {
+    gap: 12px;
+  }
+  .button-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
   .employee-form-grid {
     grid-template-columns: 1fr;
   }
@@ -46,12 +57,32 @@ button[mat-raised-button] {
     grid-column: span 1;
   }
   .form-container {
-    padding: 12px;
+    padding: 16px;
   }
   .form-field {
     margin-bottom: 8px;
   }
   button[mat-raised-button] {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .form-container {
+    padding: 12px;
+  }
+  .employee-form-grid {
+    gap: 8px;
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  button {
     width: 100%;
   }
 }/*# sourceMappingURL=employee-form.component.css.map */
