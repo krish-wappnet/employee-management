@@ -2,6 +2,9 @@
 
 A simple **Employee Management System** built with **Angular, NgRx (State Management), Angular Material**, and **@ngrx-addons/persist-state** to store data in **local storage**. Users can **add, update, delete**, and **toggle employee status** between **Active and Inactive**.  
 
+Here's the link to see the demo video: https://www.awesomescreenshot.com/video/37886789?key=cf39412fd1905217c5d634dc324f80bf
+Here's the drive link to see the video: https://drive.google.com/file/d/1OYCuaDcAZm6bjvGyXOHKEKWkHW0nLD9B/view?usp=drive_link
+
 ## Features  
 ✅ **Dashboard** – View all employees in a table with sorting and filtering.  
 ✅ **Add Employee** – Add new employees with form validation.  
@@ -91,5 +94,3 @@ Contributing
 Contributions are welcome! Feel free to fork this repo, create a feature branch, and submit a pull request. 🚀
 
 
-Here's the link to see the demo video: https://www.awesomescreenshot.com/video/37886789?key=cf39412fd1905217c5d634dc324f80bf
-Here's the drive link to see the video: https://drive.google.com/file/d/1OYCuaDcAZm6bjvGyXOHKEKWkHW0nLD9B/view?usp=drive_link
